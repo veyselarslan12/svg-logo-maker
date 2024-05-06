@@ -29,6 +29,7 @@ const questions = [
   },
 ];
 
+// Creating SVG file
 function writeToFile(content) {
   fs.writeFile("./logo.svg", content, (err) => {
     if (err) throw err;
@@ -36,6 +37,7 @@ function writeToFile(content) {
   });
 }
 
+// Initializes the data structures
 function init() {
   inquirer
     .prompt(questions)
