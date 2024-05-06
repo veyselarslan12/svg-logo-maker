@@ -1,7 +1,7 @@
 // Includes packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const shapes = require("./lib/shapes.js");
+const {Circle, Triangle, Square} = require("./lib/shapes")
 
 // Create an array of questions for user input
 const questions = [
@@ -43,8 +43,22 @@ function init() {
     .prompt(questions)
     .then((answers) => {
       console.log(answers)
-      const shapeString = shapes(answers);
-      writeToFile(shapeString);
+      let shape;
+      switch (answers.shape) {
+        case "Circle":
+          shape = new Circle();
+          break;
+        case "Triangle":
+            shape = new Triangle();
+            break;
+        case "Square":
+          shape = new Square();
+          break;
+        default:
+          throw new Error("Invalid shape.");
+      }
+      const svgContent = shape.render(answers.text, answers.textColor);
+      writeToFile(svgContent);
     })
     .catch((err) => {
       console.log(err);
