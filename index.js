@@ -57,6 +57,7 @@ function init() {
         default:
           throw new Error("Invalid shape.");
       }
+      shape.setColor(answers.shapeColor);
       const svgContent = shape.render(answers.text, answers.textColor);
       writeToFile(svgContent);
     })
