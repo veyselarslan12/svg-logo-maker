@@ -1,7 +1,7 @@
 <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
-  <circle cx="150" cy="100" r="50" fill="red" />
+  <circle cx="150" cy="100" r="50" fill="black" />
 
-  <text x="50%" y="50%" fill="blue" text-anchor="middle" dominant-baseline="central">vha</text>
+  <text x="50%" y="50%" fill="white" text-anchor="middle" dominant-baseline="central">VHA</text>
 
 </svg>

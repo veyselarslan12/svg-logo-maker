@@ -40,7 +40,7 @@ function init() {
   inquirer
     .prompt(questions)
     .then((answers) => {
-        console.log(answers)
+      console.log(answers)
       const shapeString = shapes(answers);
       writeToFile(shapeString);
     })
