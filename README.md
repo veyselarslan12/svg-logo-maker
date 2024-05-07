@@ -20,4 +20,4 @@
 
 ## Links
 * [Github Repository](https://github.com/veyselarslan12/svg-logo-maker)
-* [Video Guide Link]()
+* [Video Guide Link](https://drive.google.com/file/d/1o1VGMRudsOClK2YsdeYrxFbpQTGZfIb5/view)
