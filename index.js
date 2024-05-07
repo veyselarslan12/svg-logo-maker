@@ -42,7 +42,7 @@ function init() {
   inquirer
     .prompt(questions)
     .then((answers) => {
-      console.log(answers)
+      // console.log(answers)
       let shape;
       switch (answers.shape) {
         case "Circle":
